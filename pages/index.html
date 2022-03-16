@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <main>
+        <header>
+          <div class="message">
+            Введен верный код
+          </div>
+          <h1>Create passcode</h1>
+          <p>Enter your OTP code here. Used for logging in.</p>
+        </header>
+        <label class="code">
+          <input type="text" maxlength="4" class="code__input" />
+          <div class="code__num"></div>
+          <div class="code__num"></div>
+          <div class="code__num"></div>
+          <div class="code__num"></div>
+        </label>
+        <div class="keyboard">
+          <div class="keyboard__numbers">
+            <button class="keyboard__btn">1</button>
+            <button class="keyboard__btn">2</button>
+            <button class="keyboard__btn">3</button>
+            <button class="keyboard__btn">4</button>
+            <button class="keyboard__btn">5</button>
+            <button class="keyboard__btn">6</button>
+            <button class="keyboard__btn">7</button>
+            <button class="keyboard__btn">8</button>
+            <button class="keyboard__btn">9</button>
+            <div></div>
+            <button class="keyboard__btn">0</button>
+            <button class="keyboard__btn">#</button>
+          </div>
+          <button class="keyboard__submit" disabled>Continue</button>
+        </div>
+      </main>
+    <script src="/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #1C1C1C;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  input, button {
+    border: 0;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  main {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-top: 54px;
+    background-color: #FCFCFF;
+    border: 1px solid grey;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  header {
+    margin-bottom: 44px;
+    padding: 0 20px;
+  }
+  
+  .message {
+    background: #2F2A2A;
+    box-shadow: 0px 4px 16px rgba(28, 28, 28, 0.52);
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    padding: 17px;
+    position: absolute;
+    width: calc(100% - 40px);
+    visibility: hidden;
+  }
+  
+  .message--show {
+    visibility: visible;
+  }
+  .message--error {
+    background: #B40707;
+  }
+  
+  header h1 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  
+  .code {
+    display: grid;
+    padding: 0 39px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+  }
+  
+  .code__input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .code__num {
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px #EFF5FF;
+    border-radius: 10px;
+    font-size: 32px;
+    line-height: 80px;
+    text-align: center;
+  }
+  
+  .filled {
+    background: linear-gradient(224.2deg, #7EF192 0%, #2DC897 94.47%);
+    box-shadow: 0px 4px 16px #76ED92;
+    color: white; 
+  }
+  
+  .keyboard {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(60px);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 346px;
+    background: linear-gradient(224.45deg, #5D455D -2.13%, #3B2E3B 84.9%);
+    box-shadow: 0px -4px 16px #F8F9FF;
+    border-radius: 24px;
+    padding: 14px 20px 52px;
+    transition: transform 300ms ease, opacity 300ms ease;
+  }
+  
+  .keyboard--show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .keyboard__numbers {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    padding: 0 12px;
+    margin-bottom: 24px;
+  }
+  
+  .keyboard__btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: none;
+    font-size: 28px;
+    color: white;
+  }
+  .keyboard__btn:focus {
+    background: rgba(255, 255, 255, .15);
+    outline: none;
+  }
+  
+  .keyboard__submit {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(44.2deg, #7EF192 5.53%, #2DC897 100%);
+    box-shadow: 0px 4px 16px #76ED92;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+  .keyboard__submit:disabled {
+    background: grey;
+    box-shadow: none;
+    opacity: 0.7;
+  }
